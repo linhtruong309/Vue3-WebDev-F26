@@ -45,6 +45,74 @@
       more about the incredible destinations and cultural experiences awaiting
       you.
     </p>
+
+    <table>
+      <tr>
+        <th scope="col">Popular Destinations</th>
+        <th scope="col">Region</th>
+        <th scope="col">Specialty</th>
+      </tr>
+      <tr></tr>
+      <tr class="odd">
+        <th scope="row">Ha Noi</th>
+        <td>North</td>
+        <td>Pho</td>
+      </tr>
+      <tr></tr>
+      <tr class="even">
+        <th scope="row">Da Nang</th>
+        <td>Central</td>
+        <td>Mi Quang</td>
+      </tr>
+      <tr></tr>
+      <tr class="odd">
+        <th scope="row">Ho Chi Minh City</th>
+        <td>South</td>
+        <td>Banh Mi</td>
+      </tr>
+    </table>
     <button>Change user</button>
+
+    <div>
+      <label for="name">Your Name (4 to 8 characters):</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        minlength="4"
+        maxlength="8"
+        size="10"
+        placeholder="e.g. Linh"
+      />
+    </div>
+
+    <p>
+      Exploration progress:
+      <meter min="0" max="100" value="75">75%</meter>
+    </p>
+
+    <div aria-busy="true" aria-describedby="progress-bar">
+      <!-- Loading Vietnam travel guides... -->
+    </div>
+
+    <progress
+      id="progress-bar"
+      aria-label="Loading destination details…"
+    ></progress>
+
+    <div>
+      <label for="feedback">Leave a quick note about your travel plans:</label>
+      <br />
+      <textarea
+        id="feedback"
+        name="textarea"
+        rows="5"
+        cols="30"
+        minlength="10"
+        maxlength="100"
+        placeholder="I want to visit Ha Long Bay and try Pho..."
+      ></textarea>
+    </div>
   </body>
 </html>
