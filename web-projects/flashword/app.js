@@ -7,7 +7,6 @@ const Flashword = {
       correct: null,
       showFeedback: false,
       image: null,
-      imageAlt: null,
       hasError: false,
       inputBackgroundColor: 'white',
       showHint: false,
@@ -18,6 +17,8 @@ const Flashword = {
       lastName: '',
       firstNameAndLastName: '',
       spanishWords: ['hola', 'adios', 'uno', 'dos'],
+      circleType: '',
+      imageAlt: '',
 
       // Object example
       word: { a: 'hola', b: 'hello' },
@@ -61,11 +62,13 @@ const Flashword = {
       this.inputBackgroundColor = 'white';
       this.correct = this.wordB == this.answer;
       if (this.correct) {
-        this.circleType = 'correct';
-        this.imageAlt = 'Green check mark';
+        this.correct = true;
+        this.circleType = 'check';
+        this.imageAlt = 'Check mark';
       } else {
-        this.circleType = 'incorrect';
-        this.imageAlt = 'Red x mark';
+        this.correct = false;
+        this.circleType = 'x';
+        this.imageAlt = 'X mark';
       }
       this.showFeedback = true;
     },
