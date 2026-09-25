@@ -74,6 +74,13 @@ The following are the main activities that you will need to do when working on t
 | `git commit --allow-empty \`<br>`  -m "..." \`<br>`  --trailer "..."` | Add a missing [attribution trailer](./AttributionTrailers.md).  |
 | `git push origin <branch_name>`                                       | Push the branch named `<branch_name>` to your GitHub space.     |
 
+## Development Environment Commands
+
+| Command                                                | Action                           |
+| ------------------------------------------------------ | -------------------------------- |
+| `cd web-projects/flashword-vite`<br>`npm run dev`      | Run the Vite development server. |
+| `cd web-projects/flashword-vite`<br>`npx cypress open` | Launch the Cypress test runner.  |
+
 ## Miscellaneous
 
 ### GitHub Copilot
